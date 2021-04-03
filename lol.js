@@ -26,12 +26,12 @@ const vcard = 'BEGIN:VCARD\n'  // Jangan di ubah biar ga error
             + 'VERSION:3.0\n'  // Jangan di ubah biar ga error
             + 'FN:MRDEVILS\n'  // Ganti jadi namamu
             + 'ORG: MRDEVILS;\n'  // Ganti jadi namamu/Botmu
-            + 'TEL;type=CELL;type=VOICE;waid=6285939888897:+6285939888897\n'  // Ganti jadi nomormu, tapi jangan ubah polanya
+            + 'TEL;type=CELL;type=VOICE;waid=55910622412:+5511910622412\n'  // Ganti jadi nomormu, tapi jangan ubah polanya
             + 'END:VCARD' // jangan di ubah
 //Setingan\\
 apikey = 'MrSomething404' 
 prefix = '#' 
-owner = '6285939888897' 
+owner = '5511910622412' 
 cr = 'LoL-Human Team'
 //Setingan\\
 //------LOAD-------\\
@@ -268,7 +268,6 @@ async function starts() {
                     break
 		//DAFTAR\\
 		case 'veri'
-		case ''
 		case 'reg'
 		case 'daftar':
                 if (isRegistered) return  reply(ind.rediregis())
@@ -279,7 +278,7 @@ async function starts() {
                 if(isNaN(umurUser)) return await reply('coloque sua idade com numeros')
                 if (namaUser.length >= 30) return reply(`Coloque seu nome e sua triade.`)
                 if (umurUser > 40) return reply(`sua idade esta verdadeira mesmo ?`)
-                if (umurUser < 12) return reply(`sinto muito muito jovem para este grupo`)
+                if (umurUser < 12) return reply(`sinto muito, muito jovem para este grupo`)
                 pp_user = await getBuffer(`https://64.media.tumblr.com/3485a0388d3a4d39f7ffa026e54ab577/c7a87ef8b488c6b0-e4/s1280x1920/2581995444d8b1f5e439c6b192324f81f0f28dfb.gifv`)
                 veri = sender
                 if (isGroup) {
