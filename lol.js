@@ -267,8 +267,7 @@ async function starts() {
                     lolteam.sendMessage(from, help(prefix, pushname2,  premi, uptime, tanggal, pepolu), text, ini_csreply)
                     break
 		//DAFTAR\\
-		case 'veri'
-		case 'reg'
+		case 'verific'
 		case 'daftar':
                 if (isRegistered) return  reply(ind.rediregis())
                 if (!q.includes(',')) return  reply(ind.wrongf())
